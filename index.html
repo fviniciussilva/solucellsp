@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solucell Sp - Assistência Técnica express</title>
+    <meta name="description" content="Solucell Sp - Assistência Técnica express: Assistência técnica delivery em SP. Troca de telas, baterias e customização de iPhone (Housing Swap) no conforto da sua casa.">
+    <meta name="keywords" content="assistência técnica celular, conserto em casa, troca de tela, bateria iphone, delivery celular, housing iphone, transformar iphone xr em 15 pro">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease-in-out;
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5); 
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+        /* Animação para o destaque da customização */
+        .shine-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .shine-effect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: 0.5s;
+        }
+        .shine-effect:hover::before {
+            left: 100%;
+        }
+        
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-200">
+
+    <header class="bg-slate-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2">
+                <i data-lucide="wrench" class="w-6 h-6 text-indigo-500"></i>
+                <span class="text-2xl font-bold text-white">Solucell<span class="text-indigo-500">SP</span></span>
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center text-sm font-medium text-slate-300">
+                <a href="#como-funciona" class="hover:text-white transition-colors">Como Funciona</a>
+                <a href="#servicos" class="hover:text-white transition-colors">Serviços</a>
+                <a href="#vantagens" class="hover:text-white transition-colors">Vantagens</a>
+                <a href="#faq" class="hover:text-white transition-colors">Dúvidas</a>
+                <a href="https://wa.me/5511939432371?text=Olá!%20Gostaria%20de%20agendar%20um%20conserto." target="_blank" class="bg-indigo-600 hover:bg-indigo-500 transition-all text-white font-semibold py-2 px-5 rounded-lg shadow-lg shadow-indigo-500/20">Agendar Visita</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-6 bg-slate-900 border-b border-slate-800 absolute w-full left-0 z-50">
+            <a href="#como-funciona" class="block py-3 hover:text-indigo-400 transition-colors border-b border-slate-800">Como Funciona</a>
+            <a href="#servicos" class="block py-3 hover:text-indigo-400 transition-colors border-b border-slate-800">Serviços</a>
+            <a href="#vantagens" class="block py-3 hover:text-indigo-400 transition-colors border-b border-slate-800">Vantagens</a>
+            <a href="#faq" class="block py-3 hover:text-indigo-400 transition-colors mb-4">Dúvidas</a>
+            <a href="https://wa.me/5511939432371" class="block w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-lg text-center">Falar com Técnico</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="gradient-bg py-24 md:py-32 relative overflow-hidden">
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+            
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm font-semibold mb-6">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                    </span>
+                    Atendemos em toda São Paulo e Região
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
+                    Seu celular novo de novo,<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">sem você sair de casa.</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    A primeira assistência técnica <strong>delivery</strong> especializada. 
+                    Nossos técnicos vão até você para realizar reparos e customizações exclusivas na hora.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://wa.me/5511939432371?text=Olá!%20Preciso%20de%20um%20orçamento%20para%20meu%20celular." target="_blank" class="bg-green-600 hover:bg-green-500 transition-all text-white font-bold py-4 px-8 rounded-xl text-lg inline-flex items-center justify-center gap-2 shadow-lg shadow-green-500/20 hover:-translate-y-1">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Orçamento via WhatsApp
+                    </a>
+                    <a href="#servicos" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all text-white font-medium py-4 px-8 rounded-xl text-lg inline-flex items-center justify-center gap-2">
+                        Ver Serviços
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="como-funciona" class="py-24 bg-slate-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Logística Simplificada</h2>
+                    <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Tecnologia e comodidade: levamos a solução técnica até você.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 relative">
+                    <div class="hidden md:block absolute top-12 left-1/6 right-1/6 h-0.5 bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent"></div>
+
+                    <div class="text-center relative">
+                        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 inline-block mb-6 shadow-xl relative z-10">
+                           <i data-lucide="smartphone" class="w-10 h-10 text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-white">1. Diagnóstico Remoto</h3>
+                        <p class="text-slate-400 px-4">Avaliação inicial pelo WhatsApp. Orçamento transparente e imediato.</p>
+                    </div>
+
+                    <div class="text-center relative">
+                        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 inline-block mb-6 shadow-xl relative z-10">
+                           <i data-lucide="truck" class="w-10 h-10 text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-white">2. Delivery Técnico</h3>
+                        <p class="text-slate-400 px-4">Agendamos a visita. O técnico vai até sua casa ou retira o aparelho com segurança.</p>
+                    </div>
+
+                    <div class="text-center relative">
+                        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 inline-block mb-6 shadow-xl relative z-10">
+                           <i data-lucide="check-circle-2" class="w-10 h-10 text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-white">3. Pronto e Testado</h3>
+                        <p class="text-slate-400 px-4">Reparo ágil. Você testa o aparelho e só realiza o pagamento após aprovar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="py-24 bg-slate-950/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Especialidades Técnicas</h2>
+                    <p class="text-slate-400 mt-4">Do reparo básico à customização avançada de hardware.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="glass-card rounded-2xl p-8 hover:bg-slate-800/50 shine-effect border-indigo-500/40">
+                        <div class="absolute top-0 right-0 bg-gradient-to-l from-indigo-600 to-indigo-800 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg tracking-wider">
+                            PREMIUM
+                        </div>
+                        <div class="w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-6">
+                            <i data-lucide="palette" class="w-6 h-6 text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Transformação de iPhone</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            <strong>Upgrade Estético (Housing Swap):</strong> Transplantamos a placa e componentes do seu iPhone XR ou 11 para uma carcaça estilo <strong>iPhone 17 Pro</strong>. Tenha o visual de luxo mais atual mantendo seu hardware original.
+                        </p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-8 hover:bg-slate-800/50">
+                        <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6">
+                            <i data-lucide="smartphone-charging" class="w-6 h-6 text-blue-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Troca de Telas e Baterias</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Substituição expressa de displays e baterias. Peças Originais ou Premium com garantia estendida.</p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-8 hover:bg-slate-800/50">
+                        <div class="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-6">
+                            <i data-lucide="cpu" class="w-6 h-6 text-emerald-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Otimização de Sistema</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Correção de falhas (Loop infinito, travamentos) e reinstalação limpa do sistema para recuperar a performance de fábrica.</p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-8 hover:bg-slate-800/50">
+                        <div class="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center mb-6">
+                            <i data-lucide="microscope" class="w-6 h-6 text-amber-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Análise de Placa</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Microeletrônica avançada. Diagnóstico e reparo de curto-circuitos em aparelhos que não ligam.</p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-8 hover:bg-slate-800/50">
+                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
+                            <i data-lucide="database-backup" class="w-6 h-6 text-purple-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Backup e Dados</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Migração segura de dados entre aparelhos e configuração de backup em nuvem.</p>
+                    </div>
+
+                    <div class="glass-card rounded-2xl p-8 hover:bg-slate-800/50">
+                        <div class="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mb-6">
+                            <i data-lucide="briefcase" class="w-6 h-6 text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Soluções Corporativas</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Manutenção preventiva e corretiva para frotas de celulares empresariais com contratos exclusivos.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="vantagens" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Por que escolher a DeliveryCellSP?</h2>
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="bg-indigo-500/10 p-3 rounded-lg h-fit"><i data-lucide="shield-check" class="text-indigo-400"></i></div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white">Segurança Total</h4>
+                                    <p class="text-slate-400 text-sm">Processo transparente. Você acompanha cada etapa do reparo.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="bg-indigo-500/10 p-3 rounded-lg h-fit"><i data-lucide="clock" class="text-indigo-400"></i></div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white">Agilidade</h4>
+                                    <p class="text-slate-400 text-sm">Reparos essenciais concluídos em minutos no local.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="bg-indigo-500/10 p-3 rounded-lg h-fit"><i data-lucide="wallet" class="text-indigo-400"></i></div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white">Economia Inteligente</h4>
+                                    <p class="text-slate-400 text-sm">Sem custos de loja física, garantimos o melhor preço do mercado.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-8 rounded-2xl text-center border-2 border-indigo-500/20 relative">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-indigo-600 text-white px-6 py-2 rounded-full font-bold text-sm uppercase tracking-wider shadow-lg">
+                            Garantia Premium
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mt-4 mb-2">90 Dias de Garantia</h3>
+                        <p class="text-slate-400 mb-6">Em peças e serviços. Sua tranquilidade é nossa prioridade.</p>
+                        <hr class="border-slate-700 my-6">
+                        <div class="flex justify-center gap-4 text-slate-500">
+                            <i data-lucide="smartphone" class="w-8 h-8"></i>
+                            <i data-lucide="tablet" class="w-8 h-8"></i>
+                            <i data-lucide="watch" class="w-8 h-8"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-slate-900"><div class="container mx-auto px-6"><div class="text-center mb-16"><h3 class="text-3xl md:text-4xl font-bold text-white">Perguntas Frequentes</h3></div><div class="max-w-3xl mx-auto space-y-4">
+            <details class="glass-card rounded-lg p-6 group cursor-pointer"><summary class="flex justify-between items-center font-semibold text-lg text-white">Como funciona a transformação para iPhone 17 Pro?<i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180 text-slate-400"></i></summary><p class="text-slate-300 mt-4 pt-4 border-t border-slate-700">É um procedimento estético avançado (Housing Swap). Removemos a placa mãe, bateria, câmeras e FaceID do seu iPhone XR ou 11 original e reinstalamos em uma nova carcaça premium com o visual idêntico ao 17 Pro. O celular continua com o mesmo sistema e funções, mas com aparência de última geração.</p></details>
+            <details class="glass-card rounded-lg p-6 group cursor-pointer"><summary class="flex justify-between items-center font-semibold text-lg text-white">O técnico vai até minha casa?<i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180 text-slate-400"></i></summary><p class="text-slate-300 mt-4 pt-4 border-t border-slate-700">Sim! Para a maioria dos serviços, o técnico vai até você. Para serviços mais complexos (como a transformação de carcaça), retiramos o aparelho e devolvemos pronto no mesmo dia ou dia seguinte.</p></details>
+            <details class="glass-card rounded-lg p-6 group cursor-pointer"><summary class="flex justify-between items-center font-semibold text-lg text-white">Perco meus dados no reparo?<i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180 text-slate-400"></i></summary><p class="text-slate-300 mt-4 pt-4 border-t border-slate-700">Não. Em 99% dos serviços de hardware (telas, baterias, carcaças), seus dados permanecem intactos. Recomendamos backup apenas por precaução padrão.</p></details>
+        </div></div></section>
+
+        <section class="py-20 bg-indigo-900/20 border-t border-indigo-900/50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white mb-6">Seu celular quebrou ou precisa de um upgrade?</h2>
+                <p class="text-slate-300 mb-8 max-w-xl mx-auto">Não compre um novo. Renove o seu agora mesmo com a DeliveryCellSP.</p>
+                <a href="https://wa.me/5511939432371?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20transformação%20de%20iPhone." target="_blank" class="bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-10 rounded-full text-lg shadow-xl shadow-green-600/20 transition-transform hover:scale-105 inline-flex items-center gap-2">
+                    <i data-lucide="whatsapp" class="w-6 h-6"></i>
+                    Falar com Técnico
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 text-center py-10 border-t border-slate-800">
+        <div class="container mx-auto px-6 text-slate-500 text-sm">
+            <div class="mb-4 flex justify-center gap-4">
+                <a href="#" class="hover:text-white transition-colors"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i data-lucide="github" class="w-6 h-6"></i></a>
+            </div>
+            <p>&copy; 2024 DeliveryCellSP. Tecnologia Mobile e Logística.</p>
+            <p class="mt-2">Desenvolvido por Fernando Vinícius.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const btnMobile = document.getElementById('mobile-menu-button');
+        const menuMobile = document.getElementById('mobile-menu');
+        btnMobile.addEventListener('click', () => { menuMobile.classList.toggle('hidden'); });
+        document.querySelectorAll('#mobile-menu a').forEach(link => { link.addEventListener('click', () => { menuMobile.classList.add('hidden'); }); });
+    </script>
+</body>
+</html>
